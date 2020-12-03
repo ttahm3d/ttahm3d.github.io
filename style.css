@@ -9,6 +9,7 @@
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  scroll-snap-type: y mandatory;
 }
 
 body::-webkit-scrollbar {
@@ -35,7 +36,7 @@ main {
 }
 
 nav {
-  height: 134px;
+  height: 84px;
   text-align: center;
 }
 
@@ -46,12 +47,12 @@ main {
 }
 
 .navbar {
-  background-color: #eeeeee;
+  background-color: #110c34;
   width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-around;
-  padding: 30px 0;
+  padding: 5px 0;
   position: fixed;
   z-index: 1;
 }
@@ -72,7 +73,7 @@ main {
 
 .nav-item a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 .nav-item a:visited {
@@ -85,8 +86,12 @@ main {
 }
 
 .main-section {
+  flex: 1;
   padding: 30px;
-  transform: 2s ease-in;
+}
+
+.illustration {
+  flex: 1;
 }
 
 .main-section h1 {
@@ -120,6 +125,7 @@ main::before {
 }
 
 .skills {
+  scroll-margin-top: 30vh;
   background-color: #fdf0d5;
   position: relative;
 }
@@ -167,11 +173,13 @@ main::before {
 
 .projects {
   background-color: #d4eefe;
+  position: relative;
+  scroll-margin-top: 30vh;
 }
 
 .project-list {
   margin: 0;
-  padding: 50px 0 10px;
+  padding: 50px 0 120px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -198,4 +206,71 @@ main::before {
 
 .proj-desc {
   text-align: center;
+}
+
+.projects::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 30vh;
+  background-color: #f5d4fe;
+  clip-path: polygon(100% 20%, 0% 100%, 100% 100%);
+}
+
+.certs {
+  background-color: #f5d4fe;
+  scroll-margin-top: 30vh;
+}
+.certs h2 {
+  text-align: center;
+}
+
+.certs-list {
+  margin: 0;
+  padding: 50px 0 80px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.certificate {
+  text-align: center;
+  width: 400px;
+}
+
+.certificate img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #110c34;
+  color: #fff;
+  padding: 50px;
+}
+
+.f-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  width: 300px;
+}
+
+.socials ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.socials ul li {
+  padding: 10px 20px;
+}
+
+.socials ul li a {
+  font-size: 22px;
+  color: white;
 }
