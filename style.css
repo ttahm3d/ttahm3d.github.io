@@ -7,10 +7,9 @@
 }
 
 :root {
-  --brand-color: #ff662e;
-  --primary-color: #21074e;
-  --primary-color-shade-light: #371f6e;
-  --primary-color-shade-dark: #312e81;
+  --primary-color: #6366f1;
+  --primary-color-shade-light: #818cf8;
+  --primary-hover-color: #fd512b;
   --light-color: #f9fafb;
   --light-color-shade-one: #e5e7eb;
   --light-color-shade-two: #d1d5db;
@@ -20,18 +19,11 @@
 }
 
 span {
-  color: var(--brand-color);
+  color: var(--primary-color);
 }
 
 body {
-  color: var(--light-color-shade-one);
-  background-color: var(--primary-color);
-  background: linear-gradient(
-    180deg,
-    var(--primary-color) 33.33%,
-    var(--primary-color-shade-dark) 66.66%,
-    var(--primary-color) 100%
-  );
+  color: var(--dark-color);
   margin: 0;
 }
 
@@ -57,11 +49,12 @@ header {
 .logo {
   font-family: "pacifico";
   font-size: 3.5rem;
-  color: var(--brand-color);
+  color: var(--light-color);
+  transition: color 0.2s ease;
 }
 
 .logo:hover {
-  color: var(--light-color);
+  color: var(--primary-hover-color);
 }
 
 .navlist {
@@ -78,6 +71,7 @@ header {
   color: inherit;
   padding: 2.2rem 2rem 2rem;
   text-decoration: none;
+  transition: background-color 0.8s ease;
 }
 
 .navlist-items a:hover {
@@ -94,8 +88,7 @@ header {
 }
 
 main {
-  color: var(--light-color);
-  min-height: 100vh;
+  color: var(--dark-color);
   padding-top: 8.2rem;
   position: relative;
 }
@@ -103,12 +96,18 @@ main {
 .hero-section {
   display: flex;
   justify-content: space-around;
+  min-height: 95vh;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .hero h1 {
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 5rem;
   font-weight: 800;
   margin: 2rem 0 0;
@@ -116,8 +115,7 @@ main {
 
 .hero h2 {
   font-size: 3rem;
-  color: var(--light-color-shade-two);
-
+  color: var(--dark-color-shade-two);
   font-weight: 500px;
   margin: 0;
 }
@@ -142,7 +140,7 @@ section {
 
 section h2 {
   font-size: 3rem;
-  color: var(--brand-color);
+  color: var(--primary-color);
 }
 .skills-section {
   align-items: center;
@@ -166,34 +164,41 @@ section h2 {
 }
 
 .skill:hover {
-  color: var(--brand-color);
+  color: var(--primary-color);
+}
+
+#projects {
+  padding: 2rem;
+  scroll-margin-top: 10rem;
 }
 
 .project {
+  height: 40rem;
   max-width: 35rem;
-  height: 45rem;
+  padding: 0.5rem;
 }
 
 .projects-section {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-end;
 }
 
 .project img {
   max-width: 100%;
+  height: 25rem;
 }
 
 .project-title {
-  color: var(--brand-color);
+  color: var(--primary-color);
   font-size: 1.8rem;
   font-weight: bold;
   opacity: 0.7;
 }
 
 .project-description {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .certifications-section {
@@ -208,22 +213,23 @@ section h2 {
 
 .certification img {
   max-width: 100%;
+  height: 25rem;
 }
 
 .certification p {
-  color: var(--brand-color);
+  color: var(--dark-color);
   font-size: 1.6rem;
-  opacity: 0.7;
 }
 
 footer {
   background-color: var(--primary-color);
-  padding: 5rem;
+  padding: 3.5rem;
   text-align: center;
 }
 
 footer h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  color: var(--light-color);
 }
 
 footer ul {
@@ -240,10 +246,10 @@ footer li {
 
 footer li a {
   color: var(--light-color);
-  font-size: 3rem;
+  font-size: 2.2rem;
   transition: color 0.3s linear;
 }
 
 footer li a:hover {
-  color: var(--brand-color);
+  color: var(--primary-hover-color);
 }
