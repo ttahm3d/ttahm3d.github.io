@@ -22,15 +22,19 @@ span {
   color: var(--primary-color);
 }
 
+html {
+  font-size: 62.5%;
+  font-family: "montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--dark-color);
   margin: 0;
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "montserrat", sans-serif;
-  scroll-behavior: smooth;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -69,7 +73,7 @@ header {
 
 .navlist-items a {
   color: inherit;
-  padding: 2.2rem 2rem 2rem;
+  padding: 2.2rem 1rem 2rem;
   text-decoration: none;
   transition: background-color 0.8s ease;
 }
@@ -89,19 +93,19 @@ header {
 
 main {
   color: var(--dark-color);
-  padding-top: 8.2rem;
+  padding-top: 6.2rem;
   position: relative;
 }
 
 .hero-section {
+  align-items: center;
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
   min-height: 95vh;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
-.link {
+.logo a {
   text-decoration: none;
   color: inherit;
 }
@@ -201,9 +205,27 @@ section h2 {
   font-size: 1.2rem;
 }
 
+#projectlink {
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem;
+  text-decoration: none;
+  transition: color 0.8s ease-out;
+}
+
+#projectlink:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
 .certifications-section {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
+
   justify-content: space-evenly;
 }
 
@@ -223,13 +245,14 @@ section h2 {
 
 footer {
   background-color: var(--primary-color);
-  padding: 3.5rem;
+  padding: 2rem 4rem 0.1rem;
   text-align: center;
 }
 
 footer h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--light-color);
+  margin: 0.5rem;
 }
 
 footer ul {
@@ -246,10 +269,113 @@ footer li {
 
 footer li a {
   color: var(--light-color);
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   transition: color 0.3s linear;
+}
+
+footer i {
+  font-size: 2.8rem;
 }
 
 footer li a:hover {
   color: var(--primary-hover-color);
+}
+
+/*Projects page*/
+.projects {
+  padding: 2rem 10rem;
+}
+
+.project-wrapper {
+  box-shadow: 0 2px 10px #e0d8d8;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 4rem 0;
+  padding: 4rem;
+  position: relative;
+}
+
+.proj-image {
+  width: 35rem;
+}
+
+.proj-image img {
+  max-width: 100%;
+}
+
+.proj-details {
+  width: 48rem;
+  margin-left: 1.2rem;
+}
+
+.proj-details h3 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+}
+
+.proj-details p,
+.proj-details a {
+  font-size: 1.6rem;
+  color: var(--light-color-shade-one);
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
+
+.proj-details a {
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin-right: 0.5rem;
+}
+
+.proj-details a:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.tags {
+  position: absolute;
+  background-color: rgb(252, 92, 92);
+  color: var(--light-color);
+  font-size: 1.4rem;
+  top: 1.2rem;
+  right: 2rem;
+  padding: 0.8rem;
+}
+
+@media (max-width: 1238px) {
+  .hero-section {
+    flex-wrap: wrap;
+  }
+
+  .illustration {
+    width: 45rem;
+    height: 40rem;
+  }
+
+  .projects {
+    padding: 0;
+  }
+}
+/* 
+@media (max-width: 1071px) {
+  .illustration {
+    width: 40rem;
+    height: 35rem;
+  }
+} */
+
+@media (max-width: 858px) {
+  .illustration {
+    width: 40rem;
+    height: 35rem;
+  }
+
+  .proj-details {
+    width: 48rem;
+  }
 }
