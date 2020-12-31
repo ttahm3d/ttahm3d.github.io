@@ -21,12 +21,18 @@
   </head>
   <body>
     <header>
-      <div class="logo"><a class="link" href="index.html">Tahir</a></div>
+      <div class="logo"><a class="link" href="./index.html">Tahir</a></div>
       <nav>
         <ul class="navlist">
-          <li class="navlist-items">
-            <a href="#projects">Projects</a>
+          <li class="navbar-item">
+            <div class="toggle-wrapper">
+              <label class="checkbox-container" for="checkbox">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <div class="toggle"></div>
+              </label>
+            </div>
           </li>
+          <li class="navlist-items"><a href="#projects">Projects</a></li>
           <li class="navlist-items">
             <a href="https://tahirahmedt.hashnode.dev/" target="_black">Blog</a>
           </li>
@@ -182,5 +188,6 @@
         </li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
