@@ -8,10 +8,10 @@
 
 :root {
   --primary-color: #6366f1;
-  --bg-color: #fdfeff;
+  --bg-color: #ffffff;
   --bg-color-shade-one: #f1f1f1;
   --bg-color-shade-two: #eaeded;
-  --nav-color: #fdfeff;
+  --nav-color: #fafafa;
   --font-color: #17202a;
   --font-color-shade-one: #2e4053;
   --font-color-shade-two: #5d6d7e;
@@ -19,10 +19,10 @@
 
 [data-theme="dark"] {
   --primary-color: #6366f1;
-  --bg-color: #181717;
-  --bg-color-shade-one: #313131;
+  --bg-color: #191919;
+  --bg-color-shade-one: #111111;
   --bg-color-shade-two: #111111;
-  --nav-color: #1c1c1c;
+  --nav-color: #292929;
   --font-color: #ffffff;
   --font-color-shade-one: #bfc9ca;
   --font-color-shade-two: #5d6d7e;
@@ -75,13 +75,13 @@ header {
 }
 
 .navlist-items {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 .navlist-items a {
   color: inherit;
-  padding: 2.2rem 1rem 2.3rem;
+  padding: 2.2rem 1rem;
   text-decoration: none;
   transition: background-color 0.8s ease;
 }
@@ -250,6 +250,7 @@ section h2 {
 
 footer {
   background-color: var(--primary-color);
+  color: #ffffff;
   padding: 2rem 4rem 0.1rem;
   text-align: center;
 }
@@ -343,7 +344,7 @@ footer li a:hover {
 
 .proj-details a:hover {
   background-color: var(--primary-color);
-  color: var(--light-color);
+  color: var(--bg-color);
 }
 
 .tags {
@@ -354,6 +355,58 @@ footer li a:hover {
   top: 1.2rem;
   right: 2rem;
   padding: 0.8rem;
+}
+
+.blog-wrapper {
+  box-shadow: 0 0px 14px var(--bg-color-shade-two);
+  border-radius: 2rem;
+  margin: 2rem auto;
+  padding: 2.5rem;
+}
+
+.blog-container {
+  background-color: var(--bg-color-shade-one);
+  display: flex;
+  justify-content: space-around;
+}
+
+.cover-image {
+  width: 48%;
+}
+
+.cover-image img {
+  max-width: 100%;
+}
+
+.blog-info {
+  width: 48%;
+}
+
+.blog-info h2 {
+  font-size: 2.5rem;
+}
+
+.blog-info small {
+  font-size: 1.2rem;
+}
+
+.blog-info p {
+  font-size: 1.6rem;
+}
+
+.blog-link {
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
 
 .toggle-wrapper {
@@ -367,9 +420,9 @@ footer li a:hover {
 .checkbox-container {
   background-color: var(--font-color);
   border-radius: 2rem;
-  height: 2.6rem;
+  height: 1.8rem;
   position: relative;
-  width: 5rem;
+  width: 3.5rem;
 }
 
 input[type="checkbox"] {
@@ -377,18 +430,18 @@ input[type="checkbox"] {
 }
 
 .toggle {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   position: absolute;
   background-color: var(--bg-color);
   border-radius: 50%;
-  top: 0.3rem;
-  left: 0.5rem;
+  top: 0.2rem;
+  left: 0.2rem;
   transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .toggle {
-  transform: translateX(2.1rem);
+  transform: translateX(1.6rem);
 }
 
 @media (max-width: 1200px) {
