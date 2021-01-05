@@ -3,7 +3,6 @@
 Personal website
 
 - Designs created using Figma
-  <<<<<<< HEAD
 - Icons from Font Awesome
 - Both Light and Dark mode available (Impemented using CSS variables)
 
