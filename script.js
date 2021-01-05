@@ -1,14 +1,9 @@
 const checkbox = document.querySelector("#checkbox");
-
 const theme = localStorage.getItem("theme");
-
-checkbox.addEventListener("change", () => {});
-
 const currentTheme = localStorage.getItem("theme");
 
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
-
   if (currentTheme === "dark") {
     checkbox.checked = true;
   }

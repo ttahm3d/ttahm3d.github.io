@@ -9,8 +9,8 @@
 :root {
   --primary-color: #6366f1;
   --bg-color: #ffffff;
-  --bg-color-shade-one: #f1f1f1;
-  --bg-color-shade-two: #eaeded;
+  --bg-color-shade-one: #f0f0f0;
+  --bg-color-shade-two: #e4e4e4;
   --nav-color: #fafafa;
   --font-color: #17202a;
   --font-color-shade-one: #2e4053;
@@ -19,10 +19,10 @@
 
 [data-theme="dark"] {
   --primary-color: #6366f1;
-  --bg-color: #191919;
-  --bg-color-shade-one: #111111;
-  --bg-color-shade-two: #111111;
-  --nav-color: #292929;
+  --bg-color: #101010;
+  --bg-color-shade-one: #1f1f1f;
+  --bg-color-shade-two: #222222;
+  --nav-color: #2c2c2c;
   --font-color: #ffffff;
   --font-color-shade-one: #bfc9ca;
   --font-color-shade-two: #5d6d7e;
@@ -42,7 +42,9 @@ body {
   color: var(--font-color);
   background-color: var(--bg-color);
   margin: 0;
-  transition: background 0.2s linear;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body::-webkit-scrollbar {
@@ -81,7 +83,7 @@ header {
 
 .navlist-items a {
   color: inherit;
-  padding: 2.2rem 1rem;
+  padding: 2.2rem 1rem 2rem;
   text-decoration: none;
   transition: background-color 0.8s ease;
 }
@@ -251,6 +253,7 @@ section h2 {
 footer {
   background-color: var(--primary-color);
   color: #ffffff;
+  margin-top: auto;
   padding: 2rem 4rem 0.1rem;
   text-align: center;
 }
@@ -358,6 +361,7 @@ footer li a:hover {
 }
 
 .blog-wrapper {
+  background-color: var(--bg-color-shade-one);
   box-shadow: 0 0px 14px var(--bg-color-shade-two);
   border-radius: 2rem;
   margin: 2rem auto;
@@ -365,13 +369,13 @@ footer li a:hover {
 }
 
 .blog-container {
-  background-color: var(--bg-color-shade-one);
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .cover-image {
-  width: 48%;
+  width: 50rem;
 }
 
 .cover-image img {
@@ -379,7 +383,8 @@ footer li a:hover {
 }
 
 .blog-info {
-  width: 48%;
+  width: 50rem;
+  padding: 2rem;
 }
 
 .blog-info h2 {
@@ -397,6 +402,8 @@ footer li a:hover {
 .blog-link {
   border: 1px solid var(--primary-color);
   border-radius: 0.5rem;
+  color: var(--light-color-shade-one);
+
   font-size: 1.6rem;
   font-weight: 600;
   padding: 1rem;
