@@ -2,5 +2,6 @@
 
 Personal website
 
-[ttahm3d.github.io](https://ttahm3d.github.io)
+- Designs created using Figma
+- [tahirahmed.netlify.com](Live Link)
 
