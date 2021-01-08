@@ -4,7 +4,7 @@ Personal website
 
 - Designs created using Figma
 - Icons from Font Awesome
-- Both Light and Dark mode available (Impemented using CSS variables)
+- Checkout other branches for different layouts
 
 ### Live Links
 
