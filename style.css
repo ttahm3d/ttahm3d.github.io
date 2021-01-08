@@ -150,6 +150,7 @@ main {
 
 section {
   text-align: center;
+  padding: 2rem 0;
 }
 
 section h2 {
@@ -297,7 +298,7 @@ footer li a:hover {
 }
 
 .project-wrapper {
-  align-items: center;
+  align-items: flex-start;
   box-shadow: 0 2px 10px var(--bg-color-shade-two);
   background-color: var(--bg-color-shade-one);
   border-radius: 15px;

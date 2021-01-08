@@ -15,22 +15,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
     <title>Tahir</title>
   </head>
   <body>
     <header>
-      <div class="logo"><a class="link" href="./index.html">Tahir</a></div>
+      <div class="logo heading"><a href="./index.html">Tahir</a></div>
       <nav>
         <ul class="navlist">
-          <li class="navbar-item">
-            <div class="toggle-wrapper">
-              <label class="checkbox-container" for="checkbox">
-                <input type="checkbox" class="checkbox" id="checkbox" />
-                <div class="toggle"></div>
-              </label>
-            </div>
-          </li>
           <li class="navlist-items"><a href="./projects.html">Projects</a></li>
           <li class="navlist-items">
             <a href="./blogs.html">Blog</a>
@@ -40,10 +33,10 @@
       </nav>
     </header>
     <main>
-      <div class="container hero-section">
+      <div class="container flex">
         <div class="hero">
-          <h1>I'm <span>Tahir Ahmed</span></h1>
-          <h2>Front End Developer</h2>
+          <h1 class="heading">I'm <span>Tahir Ahmed</span></h1>
+          <h2 class="heading-level-one">Front End Developer</h2>
           <p>
             I aspire to be a
             <span><strong>Full Stack</strong></span> Developer and
@@ -55,9 +48,12 @@
         </div>
       </div>
     </main>
-    <section>
-      <h2>Skills</h2>
-      <div class="container skills-section">
+    <div class="wave">
+      <img src="./images/wave-svg.svg" alt="wave-svg" />
+    </div>
+    <section class="skills-section">
+      <h2 class="heading-level-one">Skills</h2>
+      <div class="container skills">
         <div class="skill">
           <i class="fab fa-react"></i>
           <p>React</p>
@@ -80,9 +76,12 @@
         </div>
       </div>
     </section>
-    <section id="projects">
+    <div class="wave">
+      <img src="./images/bottom-wave.svg" alt="bottom-wave" />
+    </div>
+    <section class="projects-section">
       <h2>Projects</h2>
-      <div class="container projects-section">
+      <div class="container flex projects">
         <div class="project">
           <div class="project-image">
             <a href="https://codepen.io/ttahm3d/pen/JjXVjRq" target="_blank"
@@ -128,13 +127,10 @@
           </p>
         </div>
       </div>
-      <a id="projectlink" href="./projects.html"
-        >Check out all other projects</a
-      >
     </section>
-    <section>
+    <section class="certifications-section">
       <h2>Certifications</h2>
-      <div class="container certifications-section">
+      <div class="container flex certifications">
         <div class="certification">
           <img
             src="./images/certifications/az900.jpeg"
@@ -160,7 +156,7 @@
           ></a>
         </li>
         <li>
-          <a href="https://twitter.com/ttahm3d" target="_blank"
+          <a href="https://twitter.com/_tahirahmedt" target="_blank"
             ><i class="fab fa-twitter"></i
           ></a>
         </li>
