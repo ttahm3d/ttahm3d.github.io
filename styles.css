@@ -306,6 +306,7 @@ section h2 {
 .blog-container {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   padding: 0.5rem;
+  margin: 2rem auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
